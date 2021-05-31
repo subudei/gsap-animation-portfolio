@@ -24,10 +24,21 @@
   height: 1.8rem;
   border-radius: 50%;
   border: 0.4rem solid #ffffff;
+  z-index: 3;
+}
+
+.web__dev__animation__container .l__drop {
+  position: absolute;
+  left: 30rem;
+  top: -50rem;
+  height: 50rem;
+  width: 1.6rem;
+  border: 0.5rem solid #db2779;
+  border-radius: 0.8rem;
+  z-index: 3;
 }
 
 .web__dev__animation__container .hello__div {
-  border-bottom: 2px solid black;
   width: 100%;
   height: 50%;
   position: relative;
@@ -140,5 +151,39 @@
   width: 22rem;
   height: 10rem;
   z-index: 2;
+}
+
+.web__dev__animation__container .developer__div {
+  background-color: #432f8f;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.web__dev__animation__container .developer__div .dev__dev {
+  position: absolute;
+  left: 5rem;
+  color: #a4db32;
+  font-size: 11rem;
+  font-weight: 600;
+}
+
+.web__dev__animation__container .developer__div .e__dev {
+  position: absolute;
+  left: 23.5rem;
+  color: #db2779;
+  font-size: 11rem;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.web__dev__animation__container .developer__div .l__dev {
+  position: absolute;
+  left: 29.5rem;
+  color: #db2779;
+  font-size: 11rem;
+  font-weight: 600;
+  opacity: 0;
 }
 /*# sourceMappingURL=webDev.styles.css.map */
