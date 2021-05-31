@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1vh;
+}
+.app {
+  color: #ffffff;
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+
+  .main__title {
+    font-size: 3rem;
+  }
+  .app__animation {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 0.7vh;
+  }
+}
