@@ -38,6 +38,16 @@
   z-index: 3;
 }
 
+.web__dev__animation__container .r__dev {
+  position: absolute;
+  left: 51.5rem;
+  top: 30.8rem;
+  color: #db2779;
+  font-size: 11rem;
+  font-weight: 600;
+  z-index: 3;
+}
+
 .web__dev__animation__container .hello__div {
   width: 100%;
   height: 50%;
@@ -181,6 +191,41 @@
 .web__dev__animation__container .developer__div .l__dev {
   position: absolute;
   left: 29.5rem;
+  color: #db2779;
+  font-size: 11rem;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.web__dev__animation__container .developer__div .o__dev {
+  position: absolute;
+  left: 32.5rem;
+  color: #ffffff;
+  font-size: 11rem;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.web__dev__animation__container .developer__div .p__dev {
+  position: absolute;
+  left: 39rem;
+  font-size: 11rem;
+  font-weight: 600;
+  color: #db2779;
+}
+
+.web__dev__animation__container .developer__div .ee__dev {
+  position: absolute;
+  left: 23.5rem;
+  color: #db2779;
+  font-size: 11rem;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.web__dev__animation__container .developer__div .dot__dev {
+  position: absolute;
+  left: 55rem;
   color: #db2779;
   font-size: 11rem;
   font-weight: 600;

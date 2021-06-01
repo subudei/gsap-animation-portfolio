@@ -4,7 +4,7 @@ import "./webDev.styles.css";
 import { gsap } from "gsap";
 
 function WebDevAnimation() {
-  const tl = gsap.timeline({ delay: 1 });
+  const tl = gsap.timeline({ delay: 1, repeat: -1, repeatDelay: 5 });
   useEffect(() => {
     tl.to(".i__drop", { duration: 0.5, bottom: "29rem", ease: "bounce.out" });
     tl.to(".i__drop", {
@@ -12,7 +12,6 @@ function WebDevAnimation() {
       bottom: "37rem",
       ease: "back.out(4)",
       backgroundColor: "#ffffff",
-      //   ease: "elastic.out(0.5, 0.3)",
     });
     tl.from(
       ".i__letter",
@@ -31,7 +30,7 @@ function WebDevAnimation() {
     tl.to(".h__letter", { opacity: 1 }, "-=0.4");
     tl.to(".h__drop", { width: "0rem", duration: 0.1 });
     tl.to(".h__paravan", { width: "5.5rem" }, "-=0.5");
-    tl.to(".i__dev", { opacity: 1, duration: 0.01 }, "+=1");
+    tl.to(".i__dev", { opacity: 1, duration: 0.01 }, "+=1.7");
     tl.to(".h__letter", { left: "-10rem", duration: 0.5 }, "+=0.7");
     tl.to(".i__letter", { bottom: "-15rem" });
 
@@ -40,7 +39,7 @@ function WebDevAnimation() {
       { bottom: "29rem", duration: 0.5, ease: "bounce.out" },
       "-=0.2"
     );
-    tl.to(".i__drop", { left: "35rem", duration: 0.1 });
+    tl.to(".i__drop", { left: "34.75rem", duration: 0.1 });
     tl.from(".m__dev", { left: "-15rem" }, "-=0.3");
     tl.to(".h__paravan", { width: 0 });
     tl.to(".coma__letter", { opacity: 1 }, "-=3.5");
@@ -89,6 +88,30 @@ function WebDevAnimation() {
       "-=0.6"
     );
     tl.to(".l__drop", { opacity: 0 }, "-=0.6");
+    tl.to(
+      ".i__drop",
+      { bottom: "21rem", duration: 0.2, ease: "bounce.out" },
+      "-=1.2"
+    );
+    tl.to(".i__drop", { scale: 2.9, duration: 0.5 }, "-=1");
+    tl.to(".o__dev", { opacity: 1, duration: 0.2 }, "-=0.7");
+    tl.to(".i__drop", { opacity: 0 }, "-=0.3");
+    tl.to(".o__dev", { color: "#db2779" });
+    tl.from(
+      ".p__dev",
+      {
+        bottom: "-10rem",
+      },
+      "-=2"
+    );
+    tl.to(".ee__dev", { opacity: 1, duration: 0.1 }, "-=0.5");
+    tl.to(
+      ".ee__dev",
+      { duration: 0.5, left: "45.5rem", ease: "back.out(4)" },
+      "-=0.3"
+    );
+    tl.from(".r__dev", { top: "-15rem", ease: "elastic.out(1, 0.5)" }, "-=0.2");
+    tl.to(".dot__dev", { opacity: 1 });
   }, []);
 
   return (
@@ -96,6 +119,7 @@ function WebDevAnimation() {
       aniamtion
       <div className="i__drop" />
       <div className="l__drop" />
+      <div className="r__dev">r</div>
       <div className="hello__div">
         <div className="h__letter">H</div>
         <div className="i__letter">I</div>
@@ -112,6 +136,10 @@ function WebDevAnimation() {
         <div className="dev__dev">dev</div>
         <div className="e__dev">e</div>
         <div className="l__dev">l</div>
+        <div className="o__dev">o</div>
+        <div className="p__dev">p</div>
+        <div className="ee__dev">e</div>
+        <div className="dot__dev">.</div>
       </div>
     </div>
   );
